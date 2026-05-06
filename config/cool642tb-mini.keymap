@@ -32,10 +32,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E         &kp R               &kp T                                    &kp Y      &kp U  &kp I      &kp O      &kp P
-&kp A             &kp S           &kp D         &kp F               &kp G        &none      &kp PRINTSCREEN  &kp H      &kp J  &lt 5 K    &kp L      &kp ENTER
-&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V               &kp B        &none      &none            &kp N      &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_WIN LANG2  &lt 3 SPACE  &to 1      &lt 2 BACKSPACE  &kp LANG1                               &kp ESC
+&kp Q             &kp W           &kp E         &kp R               &kp T                                          &kp Y      &kp U  &kp I      &kp O      &kp P
+&kp A             &kp S           &kp D         &kp F               &kp G        &none            &kp PRINTSCREEN  &kp H      &kp J  &lt 5 K    &kp L      &kp ENTER
+&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V               &kp B        &none            &none            &kp N      &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_WIN LANG2  &lt 3 SPACE  &lt 1 SPACE      &lt 2 BACKSPACE  &kp LANG1                               &kp ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -52,19 +52,19 @@
 
         NUM {
             bindings = <
-&kp LS(EXCL)  &kp AT        &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                         &none  &none           &kp UP_ARROW    &none      &kp DEL
-&kp SQT       &kp LS(LBRC)  &kp LBKT       &kp LS(LPAR)  &kp LS(DQT)    &kp LS(LT)      &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4   &trans          &none  &none  &none           &none           &none      &none
-&bt BT_CLR    &trans        &trans         &trans        &trans         &trans          &none  &none                                             &none
+&none  &none  &none  &none  &none                    &none  &none           &kp UP_ARROW    &none      &kp DEL
+&none  &none  &none  &none  &none  &none      &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none           &none           &none      &none
+&none  &none  &none  &none  &none  &none      &none  &none                                             &none
             >;
         };
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &trans  &trans  &trans  &kp MINUS                          &trans      &trans  &kp LS(N8)  &kp LS(N9)  &trans
-&kp QUESTION     &trans  &trans  &kp F7  &kp F8     &none        &trans     &trans      &trans  &trans      &trans      &trans
-&trans           &trans  &trans  &trans  &none      &none        &trans     &trans      &trans  &trans      &trans      &trans
-&none            &none   &none   &none   &none      &kp TAB      &kp COMMA  &kp PERIOD                                  &trans
+&kp EXCLAMATION  &none  &none   &none   &kp MINUS                          &none       &none  &kp LS(N8)  &kp LS(N9)  &none
+&kp QUESTION     &none  &none   &kp F7  &kp F8     &none        &none      &none       &none  &none       &none       &none
+&none            &none  &trans  &none   &none      &none        &none      &none       &none  &none       &none       &none
+&none            &none  &none   &none   &none      &kp TAB      &kp COMMA  &kp PERIOD                                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
